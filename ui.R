@@ -17,7 +17,7 @@ shinyUI(pageWithSidebar(
     fileInput("file1", "Upload Demographics data (csv file with header))"),
     selectInput("mode","Mode of Graph",c("directed", "undirected","max", "min", "upper",
                                          "lower", "plus"),"undirected"),
-    selectInput("comm","Find Communities",c("Yes", "No"),"No"),
+    # selectInput("comm","Find Communities",c("Yes", "No"),"No"),
     htmlOutput("yvarselect"),
     sliderInput("cex", "Data point labels font size", min = 0.1,  max = 3, value = 1,round = FALSE),
     sliderInput("cex2", "Vertex Size", min = 0.1,  max = 20, value = 5,round = FALSE),
